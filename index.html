@@ -25,7 +25,7 @@
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="">About Us</a></li>
-                        <li><a href="">Clients</a></li>
+                        <li><a href="">Partners</a></li>
                         <li><a href="">Services</a></li>
                         <li><a href="">Portfolio</a></li>
                         <li><a href="">Contact Us</a></li>
@@ -39,7 +39,7 @@
     <!-- Side Nav -->
     <ul class="sidenav" id="mobile-nav">
         <li><a href="">About Us</a></li>
-        <li><a href="">Clients</a></li>
+        <li><a href="">Partners</a></li>
         <li><a href="">Services</a></li>
         <li><a href="">Portfolio</a></li>
         <li><a href="">Contact Us</a></li>
@@ -109,6 +109,26 @@
     </section>
     <!-- End of About -->
 
+    <!-- Clients -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/parallax.jpg"></div>
+
+        <div class="container">
+            <div class="center light white-text">
+                <h3>Our Partner</h3>
+                <div class="row">
+                    <div class="col m6 s12 center">
+                        <img src="img/partners/gojek.png" alt="">
+                    </div>
+                    <div class="col m6 s12 center">
+                        <img src="img/partners/tokopedia.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Clients -->
+
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
@@ -124,6 +144,10 @@
             transition: 600,
             interval: 3000
         });
+
+        // Parallax
+        const parallax = document.querySelectorAll('.parallax');
+        M.Parallax.init(parallax);
     </script>
 </body>
 
